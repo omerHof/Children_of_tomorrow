@@ -1,0 +1,122 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+/*
+
+.jumbotron{
+  background-color: 	#ff6aa4;
+}
+*/
+
+.nav-item{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.text-muted{
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#socialMedia{
+    margin-bottom: 0.75rem;
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px !important;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.btn:focus{
+  outline: 0;
+  box-shadow: none;
+}
+
+#mail:hover{
+  opacity: 0.7;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flag{
+    padding: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .flag{
+    padding: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .flag{
+    padding: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.flag{
+    padding: 0rem;
+    width:30px;
+    height:30px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .flag{
+    padding: 0rem;
+    width:30px;
+    height:30px;
+  }
+}

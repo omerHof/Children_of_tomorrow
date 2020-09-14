@@ -1,0 +1,332 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.nav-item{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.facebook {
+  width: 30px !important;
+  height: 30px;
+  background: #3B5998;
+  color: white;
+  border-radius:50%;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0rem;
+}
+
+.facebook:hover {
+  opacity: 0.7;
+}
+
+.facebook:focus{
+  outline: 0;
+  box-shadow: none;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  right: 1rem;
+}
+
+/* Declare heights because of positioning of img element */
+
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.logo-image{
+  left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+.rotate-180 {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.number{
+  font-weight: 650 !important;
+  font-size: 270% !important;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+#h2-about {
+  margin-bottom: 2rem;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  
+}
+
+.heb{
+  text-align: right !important;
+}
+
+.checkMark{
+  margin-top: .4rem !important;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+#childrenOfTomrrowHeader{
+  font-size: 4rem;  
+  text-align: center;
+}
+
+#advancingYouthWithSports{
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#advancingYouthWithSportsHeader{
+  text-align: center;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-6 {
+  padding-top: 10rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-6 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+.marketing .col-lg-4 img{
+  
+  margin-top: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#second{
+  padding-left: 5rem;
+}
+
+.justify-content-center {
+  margin-top: 3rem;
+}
+
+.founderPic{
+  margin-right: 2rem;
+}
+
+#img3{
+  transform: rotate(90deg);
+}
+
+#carousel {
+     background-image: url(imgs/3Kids.jpg);
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  #checkMarkGoals{
+    width: 1rem !important;
+  }
+  
+  .carousel-item {
+  height: 16rem;
+  }
+  
+  .carousel-item > img {
+    height: 16rem;
+  }
+  
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+  
+  .secondHeaderOnPic{
+   font-size: 1rem !important; 
+  }
+  
+  #firstHeaderOnPic{
+    font-size: 100% !important;
+  }
+  
+ #second{
+    padding-left: 15px;
+  }
+  
+  .facebook {
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  
+  .carousel-item {
+  height: 30rem;
+  }
+  
+  .carousel-item > img {
+    height: 30rem;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+  .carousel-item {
+  height: 54rem;
+  }
+  
+  .carousel-item > img {
+    height: 54rem;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  .featurette-heading {
+    margin-top: 0rem;
+  }
+  
+  .carousel-item {
+  height: 54rem;
+  }
+  
+  .carousel-item > img {
+    height: 54rem;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+  .carousel-item {
+  height: 54rem;
+  }
+  
+  .carousel-item > img {
+    height: 54rem;
+  }
+  
+}

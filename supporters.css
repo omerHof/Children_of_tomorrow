@@ -1,0 +1,205 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+
+.nav-item{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.text-muted{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+#secondJumbo{
+  margin-top: 3rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.number{
+  font-weight: 650 !important;
+  font-size: 270% !important;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing .col-lg-3 {
+  padding-top:3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+#h2-about {
+  margin-bottom: 2rem;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  text-align: center;
+  
+}
+
+.marketing .col-lg-3 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+  text-align: center ;
+  
+}
+
+.heb{
+  text-align: right !important;
+}
+
+.checkMark{
+  margin-top: .4rem !important;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 4rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+.teamHeadings{
+  text-align: center ;
+  padding-top: 1.5rem !important;
+}
+
+#supportersHeading{
+  text-align: center ;
+  padding-top: 2rem !important;
+}
+
+.teamNames{
+  padding-top: .8rem;
+}
+
+.jumbotron {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+}
+

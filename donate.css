@@ -1,0 +1,229 @@
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+#jumboPic{
+    background-image: url(imgs/jump2.jpg);
+    background-size: cover;
+    
+}
+
+#jumboHead{
+    color:	#000000;
+    background-color:#FFFFFF;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+#jumboHeadHeb{
+  color:	#000000;
+  background-color:#FFFFFF;
+  margin-top: 3rem;
+  margin-right:2rem;
+  text-align: right;
+}
+
+
+#donateBtn{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: #A32729;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+#donateBtnHeb{
+    margin-right: 2rem;
+    margin-top: 1rem;
+    background-color: #A32729;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+#donatePlanHeb{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+}
+
+#donatePlan{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#donateExplain{
+  padding-top: 3rem;
+  font-weight: bold;
+  padding-bottom: 2rem;
+}
+.flag{
+  background-color: #343a40 !important;
+}
+/*
+
+#jumboPic{
+  background-color: 	#ff6aa4;
+}
+*/
+
+.nav-item{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.top-buffer{
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+}
+
+.text-muted{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#mail{
+    background-color: #ea4335;
+    font-weight: bold;
+    font-size:20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#buttomContainer{
+  margin-bottom: 3rem;
+}
+
+.flag{
+  background-color: #343a40 !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  
+  .navbar-brand{
+    font-size: 1rem !important;
+  }
+  
+  #jumboPic{
+    height: 16rem !important;
+  }
+  
+  #jumboHead, #jumboHeadHeb{
+    font-size: 1.2rem !important;
+  }
+  
+  #jumboHead1{
+    margin-top: 6rem;
+  }
+  
+  #donatePlan, #donatePlanHeb{
+    padding-bottom: 1rem;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .flag{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width:4rem;
+    height:4rem;
+  }
+  
+  #jumboPic{
+    height: 30rem !important;
+  }
+  
+  #jumboHead1{
+    margin-top: 35rem;
+  }
+  
+  #donatePlan, #donatePlanHeb{
+    padding-bottom: 1rem;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+  #jumboPic{
+    height: 30rem !important;
+  }
+  
+  #jumboHead1{
+    margin-top: 40rem;
+  }
+  
+  #donatePlan, #donatePlanHeb{
+    padding-bottom: 4rem;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+.flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+  #jumboPic{
+    height: 54rem !important;
+  }
+  #jumboHead1{
+    margin-top: 40rem;
+  }
+  
+  #donatePlan, #donatePlanHeb{
+    padding-bottom: 4rem;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .flag{
+    padding-top: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    width:30px;
+    height:30px;
+  }
+  
+  #jumboPic{
+    height: 54rem !important;
+  }
+  
+  #jumboHead1{
+    margin-top: 40rem;
+  }
+  
+  #donatePlan, #donatePlanHeb{
+    padding-bottom: 4rem;
+  }
+}
