@@ -1,6 +1,9 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   padding-top: 3rem;
@@ -9,13 +12,13 @@ body {
   
 }
 
-.flag{
+.flag {
   background-color: #343a40 !important;
 }
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-.nav-item{
+.nav-item {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -47,6 +50,7 @@ body {
 .carousel {
   margin-bottom: 4rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -55,7 +59,6 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
-
 
 .carousel-item > img {
   position: absolute;
@@ -83,7 +86,7 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.number{
+.number {
   font-weight: 650 !important;
   font-size: 270% !important;
 }
@@ -130,17 +133,17 @@ body {
   letter-spacing: -.05rem;
 }
 
-#childrenOfTomrrowHeader{
+#childrenOfTomrrowHeader {
   font-size: 4rem;  
   text-align: center;
 }
 
-#advancingYouthWithSports{
+#advancingYouthWithSports {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
-#advancingYouthWithSportsHeader{
+#advancingYouthWithSportsHeader {
   text-align: center;
 }
 
@@ -159,14 +162,14 @@ body {
   margin-left: .75rem;
 }
 
-.marketing .col-lg-4 img{
+.marketing .col-lg-4 img {
   
   margin-top: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
 }
 
-#second{
+#second 
   padding-left: 5rem;
 }
 
@@ -174,11 +177,11 @@ body {
   margin-top: 3rem;
 }
 
-.founderPic{
+.founderPic {
   margin-right: 2rem;
 }
 
-#img3{
+#img3 {
   transform: rotate(90deg);
 }
 
@@ -269,7 +272,7 @@ body {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
-  .flag{
+  .flag {
     padding-top: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
@@ -289,7 +292,7 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-.flag{
+.flag {
     padding-top: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
@@ -312,7 +315,7 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .flag{
+  .flag {
     padding-top: 0rem;
     padding-left: 0rem;
     padding-right: 0rem;
@@ -327,6 +330,28 @@ body {
   
   .carousel-item > img {
     height: 54rem;
+  }
+
+  #topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background: url(../imgs/arrow-back-to-top.png);
+    background-repeat: no-repeat;
+    width:47px;
+    height:44px;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+
+  #topBtn:hover {
+    filter: brightness(50%);
   }
   
 }
