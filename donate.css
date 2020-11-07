@@ -25,6 +25,10 @@ body {
   text-align: right;
 }
 
+#donateBtn {
+    width: 100%;
+    height: auto;
+}
 
 #donateBtn{
     margin-left: 1rem;

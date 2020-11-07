@@ -16,8 +16,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
         <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/carousel/">
-    
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
 
         <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bootstrap core CSS -->
@@ -84,6 +84,7 @@
                 <div class="col-lg-12 text-center">
                       <p> Giving monthly is the most powerful way to donate, 50$ per month (400$ total) will provide a full year training for a child </p>
                 </div>
+                <div id="paypal-button-container"></div>
               </div>
               <div class="col-lg-4 text-center">
                   <img src="imgs/hands.png"  width="200" height="140">
@@ -91,32 +92,28 @@
                 <div class="col-lg-12 text-center">
                       <p>Choose an amount to donate. </p>
                 </div>
+                <br>
+                <br>
+                <br>
+                <a href="paypal.html" target="_blank" role="button">
+                  <img id="donateBtn" src="imgs\donate.JPG"/>
+                </a>
               </div>
+              
               <div class="col-lg-4 text-center">
                   <img src="imgs/human-hands.png" class="rounded float-center"  width="200" height="140">
                 <h2>Take part on one of our projects</h2>
                 <div class="col-lg-12 text-center">
-                      <p>Contact us for a joint project, or donate to an existing project. </p>
+                      <p>For further information, <br>Please contact us via E-mail </p>
+                      <br>
+                </div>
+                <div class="container text-center" id=buttomContainer>
+                  <a href="mailto:childrenoftomorrowisrael@gmail.com"><img src="imgs/envelope.png" width="60" height="60"></a>
+                  <br>childrenoftomorrowisrael@gmail.com
                 </div>
               </div>
             </div>
          </div>
-         
-            <div class="container text-center" id=buttomContainer>
-                  <a class="btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AYUGWBKLKXGY4" target="_blank" role="button">
-                  <img src="imgs\btn_donateCC_LG.gif"/>
-                  </a>
-                  <p class="lead" id="donateExplain">
-                      For donation please contact us via the mail below, 
-                      <br>
-                      indicate with which program you would like to contribute 
-                      <br>
-                      and we will get back to you as soon as possible.</p>
-                  <p>
-                    <a href="mailto:childrenoftomorrowisrael@gmail.com"><img src="imgs/envelope.png" width="60" height="60"></a>
-                    <br>childrenoftomorrowisrael@gmail.com
-                  </p>
-            </div>
         
     </main>  
 
@@ -136,7 +133,31 @@
     window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
   </script>
   <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    </body>
+  <script src="https://www.paypal.com/sdk/js?client-id=AdcDnyneFYueUWDn9PKQC8ur7dCiGdFixucDivln9j-7czClbTc9AQ8sao149_lx-etaus9b4hOCbJbu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+  
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'pill',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          'plan_id': 'P-5CK82837VY7308113L6RIKMI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID);
+      }
+  }).render('#paypal-button-container');
+</script>
+
+
+
+
+  </body>
     <!-- FOOTER -->
   <footer class="container">
     <!--<p class="float-right"><a href="#"><img src="imgs/arrow-back-to-top.png"  width="40" height="40" ></a></p>-->

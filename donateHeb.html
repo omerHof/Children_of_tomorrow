@@ -81,16 +81,9 @@
                           תרומה חודשית קבועה בעלות של מאה חמישים ש"ח בחודש (סה"כ 1200 ש"ח), היא התרומה המשמעותית ביותר ותממן שנת אימונים מלאה לילד
                       </p>
                   </div>
+                  <div id="paypal-button-container"></div>
               </div>
-              <div class="col-lg-4 text-center">
-                  <img src="imgs/human-hands.png"  width="200" height="140">
-               <h2>קחו חלק באחד מהפרוייקטים שלנו</h2>
-               <div class="col-lg-12 text-center">
-                      <p>
-                          הקמת פרויקט משותף או תרומה לפרויקט קיים
-                      </p>
-                  </div>
-              </div>
+              
               <div class="col-lg-4 text-center">
                   <img src="imgs/hands.png"  width="200" height="140">
                 <h2>תרומה חד פעמית</h2>
@@ -99,14 +92,26 @@
                         בחירת סכום לתרומה
                     </p>
                   </div>
+                  <a href="paypalHeb.html" target="_blank" role="button">
+                    <img id="donateBtn" src="imgs\donate.JPG"/>
+                  </a>
               </div>
+              <div class="col-lg-4 text-center">
+                <img src="imgs/human-hands.png"  width="200" height="140">
+             <h2>קחו חלק באחד מהפרוייקטים שלנו</h2>
+             <div class="col-lg-12 text-center">
+                    <p>
+                        הקמת פרויקט משותף או תרומה לפרויקט קיים
+                    </p>
+                </div>
+            </div>
             </div>
          </div>
          
          
             <div class="container text-center" id=buttomContainer>
                   <a class="btn" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AYUGWBKLKXGY4" target="_blank" role="button">
-                  <img src="imgs\btn_donateCC_LG_HE.gif"/>
+                  <img src="imgs\btn_donateCC_LG.gif"/>
                   </a>
                   <p class="lead" id="donateExplain">
                       לתרומה ניתן ליצור איתנו קשר דרך כתובת המייל מטה
@@ -135,7 +140,43 @@
       window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
     </script>
     <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-     
+    <script src="https://www.paypal.com/sdk/js?client-id=AdcDnyneFYueUWDn9PKQC8ur7dCiGdFixucDivln9j-7czClbTc9AQ8sao149_lx-etaus9b4hOCbJbu&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+
+    <script>
+    
+      paypal.Buttons({
+    
+          style: {
+    
+              shape: 'rect',
+    
+              color: 'gold',
+    
+              layout: 'vertical',
+    
+              label: 'subscribe'
+    
+          },
+    
+          createSubscription: function(data, actions) {
+    
+            return actions.subscription.create({
+    
+              'plan_id': 'P-961903065A256101CL6RGVZQ'
+    
+            });
+    
+          },
+    
+          onApprove: function(data, actions) {
+    
+            alert(data.subscriptionID);
+    
+          }
+    
+      }).render('#paypal-button-container');
+    
+    </script>
     
     </body>
     <!-- FOOTER -->
